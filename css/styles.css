@@ -19,3 +19,7 @@ footer {
     color: white;
     width:250px;
 }
+body {
+    padding-left: 1fr;
+    padding-right: 1fr;
+}
