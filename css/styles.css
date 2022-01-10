@@ -1,0 +1,21 @@
+img {
+    max-width: 250px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+h2, h3, p, li, ul {
+    font-family: 'Varela Round', sans-serif;
+}
+
+img {
+    padding: 10px;
+    border-radius: 50px 50px;
+}
+h2 {
+    color: rgb(28, 124, 63);
+}
+footer {
+    background-color: rgb(28, 124, 63);
+    color: white;
+    width:250px;
+}
