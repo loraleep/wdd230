@@ -84,7 +84,6 @@ footer {
     }
     .three img {
         max-width: 300px;
-        float: center;
     }
   }
   @media only screen and (max-width: 500px) {
