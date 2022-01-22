@@ -1,5 +1,8 @@
+
 // toLocaleDateString
-const options = {weekday: 'lomg', day: 'numeric', month: 'long', year:'numeric'};
-document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+const options = {weekday: 'log', day: 'numeric', month: 'long', year:'numeric'};
+let date = new Date()
+console.log(date)
+document.getElementById('date-time').textContent = date
 
       const todaysdate = new Date();
