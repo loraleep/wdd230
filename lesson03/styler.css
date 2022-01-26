@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+h1, h2, h3, p, li, ul {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .logo {
     max-width: 50px;
     padding-top: 20px;
@@ -66,14 +72,14 @@ footer, p {
     background-color: black;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-h1, h2, h3, p, li, ul {
-    font-family: 'Varela Round', sans-serif;
-}
 main {
     padding-bottom: 200px;
 }
 .persona {
     max-width: 300px;
+}
+
+.domain {
+    max-width: 300px;
+    padding-bottom: 50px;
 }
