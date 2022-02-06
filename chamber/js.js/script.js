@@ -1,8 +1,4 @@
-
-// toLocaleDateString
-const options = {weekday: 'log', day: 'numeric', month: 'long', year:'numeric'};
-let date = new Date()
-console.log(date)
-document.getElementById('date-time').textContent = date
-
-      const todaysdate = new Date();
+const daynames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const monthnames = ['January', 'Febuary', 'march', 'April', 'May', 'June', 'July', 'August', 'October', 'November', 'December']
+let date = new Date();
+document.getElementById('date-time').textContent = daynames[date.getDay()] + ', ' + date.getDate() + ' ' + monthnames[date.getMonth()] + ' ' + date.getFullYear();
