@@ -72,13 +72,14 @@ main {
     padding: 10px;
 }
 #event {
-    background-color: rgb(181, 181, 181);
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 10px;
     text-align: center;
     padding: 10px;
-
+}
+#event, img {
+    max-width: 100%;
 }
 #weather {
     background-color: rgb(181, 181, 181);
@@ -99,13 +100,20 @@ main {
 
 }
 #spotlight {
-    background-color: rgb(181, 181, 181);
     grid-column: 3/4;
     grid-row: 1/4;
-    margin: 10px;
-    text-align: center;
+}
+#spotlight1 {
     padding: 10px;
-
+    margin: 10px;
+}
+#spotlight2 {
+    padding: 10px;
+    margin: 10px;    
+}
+#spotlight3 {
+    padding: 10px;
+    margin: 10px;
 }
 #news {
     background-color: rgb(181, 181, 181);
