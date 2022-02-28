@@ -5,31 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boise Channel of Commerce</title>
-    <link rel="stylesheet" href="css.css/large.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" media="(max-width: 39em)"/>
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 40em)"/>
+    <link rel="stylesheet" href="css/large.css"  media="(min-width: 60em)"/>
     <link rel="shortcut icon" href="images/favicon.png">
 </head>
 <body>
     <header>
+        <div class="top">
+            <img class="logothree" src="images/boiselogo2.webp" alt="logo"/>
+            <h1 id="logotitle">Boise Chamber of Commerce</h1>
+        </div>
+        
         <nav>
-            <ul>
-                <li><img class="logothree" src="images/boiselogo2.png" alt="logo"/></li>
-                <li><a href="color-scheme.html">Events</a></li>
-                <li><a href="target-audience.html">Spotlights</a></li>
-                <li><a href="typography.html">News</a></li>
-                <li></span></li>
+            <ul class="navigation">
+                <li><a class="ham" href="#">Menu</a></li>
+                <li><a href="#event">Events</a></li>
+                <li><a href="#spotlight">Spotlights</a></li>
+                <li><a href="#news">News</a></li>
             </ul>
         </nav>
         <div id="date-time"></div>
     </header>
     <main>
         <section id="hero">
-            <p>hero</p>
+            <img srcset="images/small.jpg 400w
+                images/medium.jpg 640w
+                images/large.jpg 960w"
+            sizes="(max-width: 200px) 400px,
+            960px"
+            src="images/large.jpg"
+            alt="meeting">
+        
         </section>
         <section id="event">
             <img src="images/event.jpg" alt="event"/>
         </section>
         <section id="weather">
-            <p>weather</p>
+            <div id="feelTemp">
+                <p>Current windchill:<span>feelTemp</span></p>
+            </div>
         </section>
         <section id="join">
             <p>join</p>
@@ -50,8 +66,12 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2022 I Loralee Price I Boise, Idaho Current Date and Time is <span id="date-time"></span>.</p>
+        <img class="logothree" src="images/boiselogo2.png" alt="logo"/>
+        <h3>Boise Chamber of Commerce</h3>
+        <p>&copy; 2022 I Loralee Price I Boise, Idaho Current Date and Time is</p>
+        <div id="date-time"></div>
     </footer>
-    <script src="js.js/script.js"></script>    
+    <script src="js.js/script.js"></script>
+    <script src="js.js/date.js"></script>       
 </body>
 </html>
