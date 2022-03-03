@@ -7,6 +7,7 @@ function preloadImage(img) {
     }
 
     img.src = src;
+    img.removeAttribute('data-src')
 }
 
 const imgOptions ={};
@@ -16,7 +17,7 @@ const imgObserver = new IntersectionObserver((enteries, imgObserver) => {
         if(!entry.isIntersecting) {
             return;
         } else {
-            preloadImage(entry.terget);
+            preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
         }
     })

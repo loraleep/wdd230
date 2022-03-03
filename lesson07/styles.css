@@ -1,6 +1,7 @@
 img {
     max-width: 400px;
     padding: 10px;
+    min-height: 267px;
 }
 body {
     display: block;
