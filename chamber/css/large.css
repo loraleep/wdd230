@@ -143,3 +143,9 @@ main {
 .navigation li:first-child {
     display: none;
 }
+
+.discover {
+    margin: 10px;
+    justify-content: center;
+    text-align: left;
+}

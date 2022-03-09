@@ -1,7 +1,7 @@
 const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img) {
-    const src = img.getAttribute('data-src')
+    const src = img.getAttribute("data-src")
     if(!src) {
         return;
     }
@@ -10,7 +10,7 @@ function preloadImage(img) {
     img.removeAttribute('data-src')
 }
 
-const imgOptions ={};
+const imgOptions ={threshold: 0};
 
 const imgObserver = new IntersectionObserver((enteries, imgObserver) => {
     enteries.forEach(entry => {
