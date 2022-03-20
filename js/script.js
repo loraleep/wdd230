@@ -1,8 +1,7 @@
+const hambutton = document.querySelector('.ham');
+const mainnav = document.querySelector('.navigation')
 
-// toLocaleDateString
-const options = {weekday: 'log', day: 'numeric', month: 'long', year:'numeric'};
-let date = new Date()
-console.log(date)
-document.getElementById('date-time').textContent = date
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-      const todaysdate = new Date();
+// To solve the mid resizing issue with responsive class on
+window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};

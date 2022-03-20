@@ -4,75 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boise Channel of Commerce</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="description" content="Boise Chamber of Commerce. Come check out what events are happening in Boise Idaho!">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/base.css" media="(max-width: 39em)"/>
     <link rel="stylesheet" href="css/medium.css" media="(min-width: 40em)"/>
     <link rel="stylesheet" href="css/large.css"  media="(min-width: 60em)"/>
-    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Boise Channel of Commerce</title>
 </head>
 <body>
     <header>
-        <div class="top">
-            <img class="logothree" src="images/boiselogo2.webp" alt="logo"/>
-            <h1 id="logotitle">Boise Chamber of Commerce</h1>
-        </div>
-        
-        <nav>
-            <ul class="navigation">
-                <li><a class="ham" href="#">Menu</a></li>
-                <li><a href="#event">Events</a></li>
-                <li><a href="#spotlight">Spotlights</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="discover.html">discover</a></li>
-            </ul>
-        </nav>
-        <div id="date-time"></div>
+        <div>
+            <div class="logotitle">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/boiselogo2.webp" alt="logo" width="100"/>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.facebook.com">
+                            <img class="fb" src="images/fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com">
+                            <img class="insta" src="images/insta.png" alt="Instagram"></a>
+                    </div>
+                    <div class="title">
+                        <h1>Boise Chamber of Commerce</h1>
+                    </div>
+                    <div class="date">
+                        <h5><span id="day"></span>: <span id="date"></span></h5>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#"></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+
+    </div>
     </header>
-    <main>
-        <section id="hero">
-            <img srcset="images/small.jpg 400w
-                images/medium.jpg 640w
-                images/large.jpg 960w"
-            sizes="(max-width: 200px) 400px,
-            960px"
-            src="images/large.jpg"
-            alt="meeting">
-        
+
+    <main class="home">
+        <section class="hero">
+            <img src="images/mainsmall.jpg" alt="Boise">
+            <a href="join.html"> Join for Updates</a>
         </section>
-        <section id="event">
-            <img src="images/event.jpg" alt="event"/>
+        <section class="event">
+            <h2>Events</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quod sint fugiat optio consequuntur veritatis quaerat atque, repudiandae quasi architecto numquam, eaque amet, ex illum quae. Eaque ipsa fugiat odio.</p>
         </section>
-        <section id="weather">
-            <div id="feelTemp">
-                <p>Current windchill:<span>feelTemp</span></p>
+        <section class="weather">
+            <h2>Weather</h2>
+            <p><span id="current-temp"></span> &deg;F</p>
+            <p></span>"</p><figure><img src="" alt="" id="weathericon" />  <figcaption></figcaption></figure>
+        </section>
+        <section class="news">
+            <h2>News Release</h2>
+            <p>Boise, Idaho is grounded in our commitment to fostering a community that welcomes all,</p>
+        </section>
+        <section class="spotlight">
+            <div class="spots">
+                <h2>Spotlights</h2>
+                <div class="spotone">
+                    <div><img src="images/spotlight1.jpg" alt="spotlight1"/></div>
+                </div>
+                <div class="spottwo">
+                    <div><img src="images/spotlight2.jpg" alt="spotlight2"/></div>
+                </div>
+                <div class="spotthree">
+                    <div><img src="images/spotlight3.jpg" alt="spotlight3"/></div>
+                </div>
             </div>
+            
         </section>
-        <section id="join">
-            <p>join</p>
-        </section>
-        <section id="spotlight">
-            <div id="spotlight1">
-                <img src="images/spotlight1.jpg" alt="spotlight1"/>
-            </div>
-            <div id="spotlight2">
-                <img src="images/spotlight2.jpg" alt="spotlight2"/>
-            </div>
-            <div id="spotlight3">
-                <img src="images/spotlight3.jpg" alt="spotlight3"/>
-            </div>
-        </section>
-        <section id="news">
-            <p>news</p>
+        <section class="join">
+            <div>Join for Updates</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nostrum illo in optio debitis quae aperiam, libero ea, beatae rem, adipisci aut magni hic mollitia! Ea eligendi repellendus minima non.</p>
         </section>
     </main>
     <footer>
-        <img class="logothree" src="images/boiselogo2.png" alt="logo"/>
-        <h3>Boise Chamber of Commerce</h3>
-        <p>&copy; 2022 I Loralee Price I Boise, Idaho Current Date and Time is</p>
-        <div id="date-time"></div>
+        <a href="index.html">
+            <img class="logothree" src="images/boiselogo2.png" alt="logo"/>
+        </a>
+        <div class="address">
+            <h4>Boise Chamber of Commerce</h4>
+            <p>2974 Boise Lane</p>
+            <p>Capitol Blvd, ID 83716</p>
+        </div>
+        <div class="contact">
+            <p>info@boisechamber.org</p>
+            <p>(208) 928-3950</p>
+            <p>📍Location Map</p>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; 2022 I Loralee Price I Boise, Idaho</p>
+        <h5>
+            last updated:
+            <span id="updated"></span> at <span id="time"></span></h5>
+
+        </div>        
     </footer>
-    <script src="js.js/script.js"></script>
-    <script src="js.js/date.js"></script>       
+    <script src="js/script.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 </html>

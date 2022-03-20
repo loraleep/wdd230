@@ -1,135 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
- 
-h1, h2, h3, p, li, ul, header {
-    font-family: 'Varela Round', sans-serif;
-}
- 
-.logo {
-    max-width: 50px;
-    padding-top: 20px;
-}
-.logotwo {
-    max-width: 100px;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-body {
-    margin: auto;
-}
- 
-h1 {
+
+.date {
     text-align: center;
-    color: rgb(0, 0, 130);
 }
-h3 {
-    color: rgb(0, 0, 130);
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
- 
-  li {
-    float: left;
-  }
- 
-  li a {
-    display: block;
-    color: rgb(0, 0, 130);
-    padding: 16px;
-    text-decoration: none;
-    justify-content: first baseline;
-  }
- 
-  li a:hover {
-    background-color: rgb(3, 3, 102);
-  }
- 
-.logothree {
-    max-width: 100px;
-    padding: 10px;
-}
- 
-footer {
-    padding: 2rem;
-}
-main {
-    margin: auto;
+.home {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 16rem 16rem 16rem;
+    grid-template-columns: calc(25% - 1em) calc(50% - 1em) calc(25% - 1em);
+    grid-template-rows: 10em 10em 15em;
+    gap: 1.5em;
+    margin-bottom: 2em;
+    width: 95%;
 }
-#hero {
-    background-color: rgb(181, 181, 181);
+.hero {
     grid-column: 2/3;
     grid-row: 1/3;
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
 }
-#event {
+.event {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
 }
-#event, img {
-    max-width: 100%;
-}
-#weather {
-    background-color: rgb(181, 181, 181);
+.weather {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
- 
 }
-#join {
-        background-color: rgb(181, 181, 181);
-        grid-column: 1/2;
-        grid-row: 3/4;
-        margin: 10px;
-        text-align: center;
-        padding: 10px;
- 
+.join {
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
-#spotlight {
-    grid-column: 3/4;
-    grid-row: 1/4;
-}
-#spotlight1 {
-    padding: 10px;
-    margin: 10px;
-}
-#spotlight2 {
-    padding: 10px;
-    margin: 10px;    
-}
-#spotlight3 {
-    display: block;
-    padding: 10px;
-    margin: 10px;
-}
-#news {
-    background-color: rgb(181, 181, 181);
+.news {
     grid-column: 2/3;
     grid-row: 3/4;
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
- 
 }
- 
-#date-time {
-    justify-content: flex-end;
-    align-items: end;
-}
- 
+.spotlight {
+    grid-column: 3/4;
+    grid-row: 1/4;
 
+}
+.spots {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.spotone {
+    grid-column: 1/2;
+}
+.spottwo {
+    grid-column: 2/3;
+}
+.spotthree {
+    grid-column: 3/4;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #020d61;
+}
 .navigation {
     display: flex;
 }
@@ -142,10 +65,4 @@ main {
 }
 .navigation li:first-child {
     display: none;
-}
-
-.discover {
-    margin: 10px;
-    justify-content: center;
-    text-align: left;
 }
