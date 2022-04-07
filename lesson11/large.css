@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Martel Sans', sans-serif;
+    color: #E06961;
+}
+
+p, a, button {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+.logoone {
+    padding-top: 10px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #F5A09F;
+    color: white;
+    margin: 15px;
+}
+
+.home {
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+.mainimg img{
+    border: #F5A09F dashed 3px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.homeinfo {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 10px;
+    width: 1000px;
+    justify-content: center;
+    margin: auto;
+}
+
+.imgtwo {
+    grid-column: 1/2;
+    text-align: left;
+}
+.imgtwo img {
+    border: #F5A09F dashed 3px;
+    padding: 5px;
+}
+.infotwo {
+    grid-column: 2/3;
+    font-size: 24px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F5A09F;
+    color: white;
+}
+button:hover, nav a:hover {
+    background-color: #E06961;
+}
+body {
+    background-color: #CAF4EF;
+}
+ h1 {
+     padding: 30px;
+     font-size: 60px;
+ }
+
+ .circles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+ }
+
+ footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+
+.weather div {
+    display: flex;
+    justify-content: center;
+  }
+
+.weather {
+    background-color: #EEDEAA;
+    width: 200px;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 200px;
+    opacity: 90%;
+    border-radius: 10px;
+}
+  
