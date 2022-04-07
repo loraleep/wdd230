@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn Suites</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="base.css" media="(max-width: 39em)"/>
+    <link rel="stylesheet" href="medium.css" media="(min-width: 40em)"/>
+    <link rel="stylesheet" href="large.css"  media="(min-width: 60em)"/>
+</head>
+<body class="home">
+    <header>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div id="hamitems">
+                <a href="reservations.html">Reservations</a>
+                <a href="services.html">Services</a>
+                <img class="logoone" src="images/logo-01.png" alt="temple inn suites logo"/>
+                <a href="temple.html">Temples</a>
+                <a href="home.html">Home</a>
+            </div>
+
+        </nav>
+        <h1>Temple Inn Suites</h1>
+    </header>
+    <main>
+        <h2>Meet the Missionaries</h2>
+        <section>
+            <form method="get" action="temple.html">
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Email* <input type="email" placeholder="name@gmail.com" name="email" required></label>
+                <label class="top">Phone Number <input type="tel" name="tel"></label>
+                <div>
+                <input class="button" type="submit" name="submitBtn" value="Send">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="webfooter">
+        <div class="bottomlogo">
+            <img src="images/logo-01.png" alt="temple inn suites logo"/>
+        </div>
+        <div class="info">
+            <h3>2465 Steve Hunt Road</h3>
+            <h3>Miami, FL, 33128</h3>
+            <h3>305-888-0488</h3>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/">
+                <img alt="facebook" src="images/facebook.png">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img alt="instagram" src="images/instagram.png">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img alt="youtube" src="images/youtube.png">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

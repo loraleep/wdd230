@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   margin: 55px;
 }
-#hamitems :hover {
+#hamitems :hover, form .button {
     background-color: #E06961;
 }
 
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-p, a, button {
+p, a, button, form, label, ul, li, ol {
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 .logoone {
@@ -49,6 +49,7 @@ p, a, button {
     border: #F5A09F dashed 3px;
     padding: 5px;
     margin-bottom: 50px;
+    width: 1000px;
 }
 
 .homeinfo {
@@ -101,7 +102,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
  }
 
 .weather div {
@@ -118,4 +119,64 @@ body {
     opacity: 90%;
     border-radius: 10px;
 }
+body form label.top input{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
 
+form .button {
+     display: block;
+     padding: 10px;
+     color: white;
+     background-color:  #E06961;
+     margin: auto;
+     margin-top: 10px;
+     border: none;
+     border-radius: 10px;
+ }
+ ul {
+     text-align: left;
+     margin-top: 120px;
+     font-size: 24px;
+ }
+ .serving {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     width: 1000px;
+     margin: auto;
+    padding: 20px;
+    }
+
+ .serveimg {
+    width: 500px;
+ }
+
+ .servelink a {
+    text-decoration: none;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #F5A09F;
+    color: white;
+ }
+
+ .wedding {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     width: 1000px;
+     margin: auto;
+ }
+ .wedding img {
+     width: 500px;
+     padding: 10px;
+ }
+
+ .wedding h3, {
+    font-size: 36px;
+ }
+ .wedding p {
+     font-size: 20px;
+ }
