@@ -7,22 +7,37 @@ h1, h2, h3, h4, h5, h6 {
     color: #E06961;
 }
 
+  
+#hamitems { 
+    display: flex; 
+  }
+#hamitems a {
+  flex-grow: 1;
+  text-decoration: none;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #F5A09F;
+  color: white;
+  margin: 55px;
+}
+#hamitems :hover {
+    background-color: #E06961;
+}
+
+#hamnav label, #hamburger {
+     display: none;      
+}
+
+
 p, a, button {
     font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 .logoone {
     padding-top: 10px;
 }
-nav a {
-    text-decoration: none;
-    font-size: 24px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #F5A09F;
-    color: white;
-    margin: 15px;
-}
+
 
 .home {
     margin: 0 auto;
@@ -65,7 +80,7 @@ button {
     background-color: #F5A09F;
     color: white;
 }
-button:hover, nav a:hover {
+button:hover {
     background-color: #E06961;
 }
 body {
@@ -104,22 +119,3 @@ body {
     border-radius: 10px;
 }
 
-#hamnav {
-    width: 100%;
-    background: #000;
-  }
-  
-  /* (B) HORIZONTAL MENU ITEMS */
-  #hamitems { display: flex; }
-  #hamitems a {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-  }
-  #hamitems a:hover { background: #af0d0d; }
-  
-  /* (C) HIDE HAMBURGER */
-  #hamnav label, #hamburger { display: none; }

@@ -34,21 +34,15 @@ nav a {
     border: #F5A09F dashed 3px;
     padding: 5px;
     margin-bottom: 50px;
+    width: 600px;
 }
 
 .homeinfo {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    gap: 10px;
-    width: 1000px;
+    width: 600px;
     justify-content: center;
     margin: auto;
 }
 
-.imgtwo {
-    grid-column: 1/2;
-    text-align: left;
-}
 .imgtwo img {
     border: #F5A09F dashed 3px;
     padding: 5px;
@@ -77,14 +71,12 @@ body {
  }
 
  .circles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     padding: 50px;
  }
 
  footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding-top: 50px;
     padding-bottom: 50px;
  }
