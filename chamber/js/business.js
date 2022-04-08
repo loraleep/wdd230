@@ -1,4 +1,4 @@
-const requestURL = 'http://127.0.0.1:5500/chamber/data.json';
+const requestURL = 'https://loraleep.github.io/wdd230/chamber/data.json';
 
 
 fetch(requestURL)
@@ -20,25 +20,25 @@ function displayProphets(prophet) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let portrait = document.createElement('img');
-    let address = document.createElement('p');
-    let telephone = document.createElement('p')
+    let birthDate = document.createElement('p');
+    let birthPlace = document.createElement('p')
   
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${title}`;
+    h2.textContent = `${prophet.name} ${prophet.lastname}`;
 
   
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${title} Latter-day President Number ${prophet.order}`);
+    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} Latter-day President Number ${prophet.order}`);
     portrait.setAttribute('loading', 'lazy');
-    address.textContent = `Birth Date: ${prophet.address}`;
-    telephone.textContent = `Birth Place: ${prophet.telephone}`;
+    birthDate.textContent = ` ${prophet.birthdate}`;
+    birthPlace.textContent = ` ${prophet.birthplace}`;
   
     // Add/append the section(card) with the h2 element
-    card.appendChild(h2);
     card.appendChild(portrait);
-    card.appendChild(address);
-    card.appendChild(telephone);
+    card.appendChild(h2);
+    card.appendChild(birthDate);
+    card.appendChild(birthPlace);
 
   
     // Add/append the existing HTML div with the cards class with the section(card)

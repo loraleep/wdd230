@@ -87,3 +87,6 @@ form .button {
     margin-left: 38%;
  }
 
+ #direct img, p, h2, h1 {
+    border: none;
+ }
