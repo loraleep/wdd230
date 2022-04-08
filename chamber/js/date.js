@@ -18,5 +18,5 @@ document.getElementById("time").innerText = updated.toLocaleTimeString();
 // Banner goes up on mondays and tuesdays
 
 if(today.getDay() == 1 | today.getDay() == 2) {
-    document.getElementById("banner").style.display = "block";
+    document.getElementById("date").style.display = "block";
 };

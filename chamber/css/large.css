@@ -101,11 +101,19 @@ form .button {
     grid-gap: 5px;
 }
 
-.cute img {
-    height: 400px;
-}
-
 .cute h1, h2, p {
     text-align: center;
     margin: 20px; 
+}
+.cards img {
+    max-width: 100px;
+    padding-left: 38%;
+}
+.discover img{
+    width: 350px;
+}
+
+.contact label.top {
+    display: block;
+    margin: 5px auto;
 }

@@ -57,7 +57,6 @@ main section {
 
 .event, .weather, .news {
     flex-direction: column;
-    padding: 15px;
 }
 
 
@@ -191,3 +190,25 @@ form .button {
  label.top {
     margin-left: 38%;
  }
+ .cute {
+    width: 90%;
+    margin: auto;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5px;
+}
+
+.cute h1, h2, p {
+    text-align: center;
+    margin: 20px; 
+}
+.cards img {
+    max-width: 100px;
+    padding-left: 38%;
+}
+.discover img{
+    width: 250px;
+    text-align: center;
+}

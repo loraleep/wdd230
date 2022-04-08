@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/base.css" media="(max-width: 39em)"/>
-    <link rel="stylesheet" href="css/medium.css" media="(min-width: 40em)"/>
-    <link rel="stylesheet" href="css/large.css"  media="(min-width: 60em)"/>
-    <link rel="shortcut icon" href="images/favicon.png">
-
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <meta name="description" content="Boise Chamber of Commerce. Come check out what events are happening in Boise Idaho!">
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/base.css" media="(max-width: 39em)"/>
+        <link rel="stylesheet" href="css/medium.css" media="(min-width: 40em)"/>
+        <link rel="stylesheet" href="css/large.css"  media="(min-width: 60em)"/>
+        <title>Boise Channel of Commerce</title>
+    </head>
+<body class="cute">
     <header>
-        <div class="top">
-            <img class="logothree" src="images/boiselogo2.webp" alt="logo"/>
-            <h1 id="logotitle">Boise Chamber of Commerce</h1>
-            <div id="date-time"></div>
-
-        </div>
-        
-        <nav>
-            <ul class="navigation">
-                <li><a class="ham" href="#">Menu</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#event">Events</a></li>
-                <li><a href="#spotlight">Spotlights</a></li>
-                <li><a href="#news">News</a></li>
-            </ul>
-        </nav>
+        <div>
+            <div class="logotitle">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/boiselogo2.webp" alt="logo" width="100"/>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.facebook.com">
+                            <img class="fb" src="images/fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com">
+                            <img class="insta" src="images/insta.png" alt="Instagram"></a>
+                    </div>
+                    <div class="title">
+                        <h1>Boise Chamber of Commerce</h1>
+                    </div>
+                    <div class="date">
+                        <h5><span id="day"></span>: <span id="date"></span></h5>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </div>
     </header>
     <section class="discover">
         <h2>Welcome to Boise!</h2>
@@ -79,10 +94,27 @@
         </picture>
     </section>
     <footer>
-        <img class="logothree" src="images/boiselogo2.png" alt="logo"/>
-        <h3>Boise Chamber of Commerce</h3>
-        <p>&copy; 2022 I Loralee Price I Boise, Idaho Current Date and Time is</p>
-        <div id="date-time"></div>
+        <a href="index.html">
+            <img class="logothree" src="images/boiselogo2.png" alt="logo"/>
+        </a>
+        <div class="address">
+            <h4>Boise Chamber of Commerce</h4>
+            <p>2974 Boise Lane</p>
+            <p>Capitol Blvd, ID 83716</p>
+        </div>
+        <div class="contact">
+            <p>info@boisechamber.org</p>
+            <p>(208) 928-3950</p>
+            <p>📍Location Map</p>
+
+        </div>
+        <div class="copyright">
+            <p>&copy; 2022 I Loralee Price I Boise, Idaho</p>
+        <h5>
+            last updated:
+            <span id="updated"></span> at <span id="time"></span></h5>
+
+        </div>        
     </footer>
     <script src="js/date.js"></script> 
     <script src="js/script.js"></script>      
