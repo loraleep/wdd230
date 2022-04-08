@@ -142,3 +142,24 @@ nav {
 .responsive a.ham::before {
 	content: "❌ ";
 }
+
+body form label.top input{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+form .button {
+     display: block;
+     padding: 10px;
+     color: white;
+     background-color:  #020d61;
+     margin: auto;
+     margin-top: 10px;
+     border: none;
+     border-radius: 10px;
+ }
+ label.top {
+    margin-left: 38%;
+ }
