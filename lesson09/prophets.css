@@ -1,0 +1,18 @@
+body {
+    width: 90%;
+    margin: auto;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5px;
+}
+
+img {
+    height: 400px;
+}
+
+h1, h2, p {
+    text-align: center;
+    margin: 20px; 
+}
